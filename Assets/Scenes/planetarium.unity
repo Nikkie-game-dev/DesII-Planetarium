@@ -231,6 +231,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1771598079}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &278092649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: Player/ToggleDamping
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_ActionId: 8788e488-d8a8-4eaf-bc89-ee751992f98c
 --- !u!1001 &861796250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1004,10 +1018,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3076976868799774090, guid: c4a86b35b0b97624cb801350718f0162, type: 3}
+      propertyPath: m_Mass
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 4800781372448153544, guid: c4a86b35b0b97624cb801350718f0162, type: 3}
       propertyPath: move
       value: 
       objectReference: {fileID: 1201122553}
+    - target: {fileID: 4800781372448153544, guid: c4a86b35b0b97624cb801350718f0162, type: 3}
+      propertyPath: engineForce
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800781372448153544, guid: c4a86b35b0b97624cb801350718f0162, type: 3}
+      propertyPath: toggleDamping
+      value: 
+      objectReference: {fileID: 278092649}
     - target: {fileID: 5689556674627111235, guid: c4a86b35b0b97624cb801350718f0162, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.00136
