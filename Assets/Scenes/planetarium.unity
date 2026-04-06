@@ -1028,7 +1028,7 @@ PrefabInstance:
       objectReference: {fileID: 1201122553}
     - target: {fileID: 4800781372448153544, guid: c4a86b35b0b97624cb801350718f0162, type: 3}
       propertyPath: engineForce
-      value: 100
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 4800781372448153544, guid: c4a86b35b0b97624cb801350718f0162, type: 3}
       propertyPath: toggleDamping

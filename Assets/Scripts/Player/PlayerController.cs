@@ -49,15 +49,15 @@ namespace Player
 
         private void Move(InputAction.CallbackContext ctx)
         {
-            _movement = Time.deltaTime * engineForce * ctx.ReadValue<Vector2>();
+            _movement = engineForce * ctx.ReadValue<Vector2>();
             _isMoving = true;
         }
 
         private void Stop(InputAction.CallbackContext _) => _isMoving = false;
 
-        private void Update()
+        private void FixedUpdate()
         {
-            if (_isMoving) _rigidbody?.AddForce(_movement.x, 0, _movement.y, ForceMode.Acceleration);
+            if (_isMoving) _rigidbody?.AddForce(_movement.x * Time.fixedDeltaTime, 0, _movement.y * Time.fixedDeltaTime, ForceMode.Acceleration);
         }
 
         private void OnDestroy()
